@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page{  
+    background-color: rgba(219, 121, 244, 0.1);
+}
+.page__header{
+    height: 20%;
+    width: 100%;
+    padding: 10px;
+    
+    
+    display: flex;
+    flex-grow: inherit;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    background-color: rgba(219, 121, 244, 0.3);
+}
+.header__text{
+    height: fit-content;
+
+    margin: 0;
+    padding: 1%;
+
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgba(153, 8, 88, 1);
+}
+.header__menu{
+    height: fit-content;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(153, 8, 88, 1);
+}
+.link{  
+    text-decoration: none;
+    color: white;
+}
+.page__gallery {
+    margin: 5px;
+    
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, 150px);
+}
+.gallery__icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 1s; /* Время эффекта при наведении курсора*/
+}
+
+icon:hover{
+    transform: scale(1.2); /* Увеличение масштаба при наведении курсора */
+}
